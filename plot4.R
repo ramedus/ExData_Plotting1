@@ -1,0 +1,12 @@
+#Set the working directory and place source file in the path
+hs_data<-read.table("household_power_consumption.txt",sep=";",na.strings="?",header=T)
+hs_data$datetime<-strptime(paste(hs_data[,1],hs_data[,2]),"%d/%m/%Y %H:%M:%S")
+library(dplyr)
+household_data<-filter(hs_data,datetime>="2007-02-01" & datetime<"2007-02-03")
+png("plot4.png")
+par(mfcol=c(2,2),mar=c(4,4,1,1))
+with((household_data),plot(datetime,Global_active_power,type="l",ylab="Global Active Power",xlab=""))
+with(household_data,{plot(datetime,Sub_metering_1,type="n",ylab="Energy sub metering",xlab="");lines(datetime,Sub_metering_1);lines(datetime,Sub_metering_2,col="red");lines(datetime,Sub_metering_3,col="blue");legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),pch=45,col=c("black","red","blue"),bty="n")})
+with((household_data),plot(datetime,Voltage,type="l"))
+with((household_data),plot(datetime,Global_reactive_power,type="l"))
+dev.off()
