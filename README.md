@@ -52,3 +52,20 @@ Add the PNG file and R code file to your git repository
 When you are finished with the assignment, push your git repository to GitHub so that the GitHub version of your repository is up to date. There should be four PNG files and four R code files.
 
 The four plots that you will need to construct are shown below.
+
+Plot 1
+
+![plot1](https://user-images.githubusercontent.com/81530995/180611723-5faef1f7-48ec-4c2f-be35-fb3303865165.png)
+
+Plot 2
+
+![plot2](https://user-images.githubusercontent.com/81530995/180611740-14a71d78-cff8-455e-b12b-9547f930c68f.png)
+
+Plot 3
+
+![plot3](https://user-images.githubusercontent.com/81530995/180611741-b8c19c5d-208e-4e2c-a889-567bfbae9905.png)
+
+Plot 4
+
+![plot4](https://user-images.githubusercontent.com/81530995/180611744-e072cefa-9df1-43bc-8882-7c3fa91195f6.png)
+
